@@ -24,4 +24,5 @@ merged_df = merged_df.drop('OPEN_TIME', axis=1)
 merged_df = merged_df.ffill()
 
 # Lưu DataFrame mới vào file CSV
-merged_df.to_csv('LABEL_BTC_time_fill.csv', index=False)
+csv_file = 'LABEL_BTC_time_fill.csv'
+merged_df.to_csv(csv_file, index=False)
